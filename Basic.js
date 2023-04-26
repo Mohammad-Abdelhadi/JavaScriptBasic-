@@ -67,10 +67,35 @@ console.log(1 === "1"); // false
 // Last task
 let string = "Welcome To Orange";
 console.log(string);
-console.log(string.toUpperCase());
 console.log(string.charAt(8) + string.charAt(9).toUpperCase());
+console.log(string.toUpperCase());
+console.log(string.replace("Welcome To", "Hello from"));
 
 console.log(string.split(" ")[1].toUpperCase());
 console.log(string.toLocaleLowerCase());
 console.log(string.length);
-console.log(string.push(digtal));
+console.log(string + " Jordan");
+
+console.log(`Welcome to "${string.slice(11)}"`);
+
+
+let input = "cactus";
+let charToReplace = "c";
+let count = 0;
+let output = "";
+
+for (let i = 0; i < input.length; i++) {
+  if (input[i] === charToReplace) {
+    count++;
+    if (count === 2) {
+      output += "*";
+    } else {
+      output += input[i];
+    }
+  } else {
+    output += input[i];
+  }
+}
+
+console.log(output);
+;
